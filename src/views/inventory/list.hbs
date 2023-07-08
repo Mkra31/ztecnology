@@ -1,0 +1,69 @@
+<div class="container p-4">
+
+    
+          <a class="btn btn-secondary p-2 m-2" href="/inventory/add/">
+                        Agregar producto
+        </a>
+
+           
+    <div class="row mt-3">
+        {{#each links}}
+
+        <div class="col-md-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+
+                    <a href="{{precio}}" target="_blank">
+                        <h3 class="card-title text-uppercase">
+                            {{title}}
+                        </h3>
+                    </a>
+                    <p class="m-2">{{description}}</p>
+                    <p class="m-2">{{precio}}</p>
+                    <p class="m-2">{{almacen}}</p>
+                    <p class="m-2">{{vendidos}}</p>
+                    <p class="m-2">{{margenbruto}}</p>
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/inventory/delete/{{id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/inventory/edit/{{id}}">
+                        Edit
+                    </a>
+
+              
+
+              
+                </div>
+            </div>
+        </div>
+
+
+
+  
+
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>There are not prodcuts saved yet.</p>
+                <a href="/inventory/add">Create One!</a>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+
+    
+
+   
+</div>
+
+
+
+           
+

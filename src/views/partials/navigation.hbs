@@ -1,0 +1,87 @@
+
+{{!-- barra de navegacion compartida entre las paginas despues de iniciar sesion  --}}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <i class="fas fa-link"></i> CRM
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+
+        {{!-- Clientes --}}
+
+      <li class="nav-item dropdown">
+          <a class="nav-link" href="/clientes" id="navbarDropdown" role="button" 
+            aria-haspopup="true" aria-expanded="false">
+          Clientes
+          </a>
+
+        {{!-- Lista de usuarios --}}
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/usuarios" id="navbarDropdown" role="button" 
+            aria-haspopup="true" aria-expanded="false">
+          Usuarios
+          </a>
+
+        {{!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+          Usuarios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/links">Usuarios</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/links/add">Agregar usuarios</a>
+          </div>
+          
+        </li> --}}
+
+        {{!-- Inventario --}}
+<li class="nav-item dropdown">
+          <a class="nav-link" href="/inventory" id="navbarDropdown" role="button" 
+            aria-haspopup="true" aria-expanded="false">
+          Inventario
+          </a>
+
+
+
+        {{!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+          Inventario
+          </a> --}}
+          {{!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/inventory">Inventario</a> --}}
+            {{!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/inventory/add">Agregar Producto</a>
+          </div> --}}
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/signin">SignIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">SignUp</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

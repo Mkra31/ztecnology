@@ -1,0 +1,65 @@
+<div class="container p-4">
+
+    
+          <a class="btn btn-secondary p-2 m-2" href="/clientes/add/">
+                        Agregar cliente
+        </a>
+
+           
+    <div class="row mt-3">
+        {{#each links}}
+
+        <div class="col-md-3">
+
+            <div class="card text-center">
+                <div class="card-body">
+
+                    <a href="{{phone}}" target="_blank">
+                        <h3 class="card-title text-uppercase">
+                            {{name}}
+                        </h3>
+                    </a>
+                    <p class="m-2">{{address}}</p>
+                    <p class="m-2">{{phone}}</p>
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/clientes/delete/{{id}}">
+                        Delete
+                    </a>
+                    <a class="btn btn-secondary" href="/clientes/edit/{{id}}">
+                        Edit
+                    </a>
+
+              
+
+              
+                </div>
+            </div>
+        </div>
+
+
+
+  
+
+
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>There are not clients saved yet.</p>
+                <a href="/clientes/add">Create One!</a>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+
+    
+
+   
+</div>
+
+
+
+           
+

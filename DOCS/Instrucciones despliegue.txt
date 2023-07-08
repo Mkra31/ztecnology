@@ -1,0 +1,23 @@
+Instrucciones (instalar xammp y vscode en windows)
+
+1. Implementar las bases de datos importandola en el servidor  local de  XAMMP 
+
+2. INICIAR SERVICIOS DE XAMMP (SQL Y APACHE ) DENTRO DEL INTERFAZ DE XAMMP con puerto 3306 en mysql 
+
+3. AGREGAR EL USUARIO EN XAMPP CON PHPMYADMIN con todos los permisos 
+
+	host: 'localhost', 
+
+        user: 'user2', 
+
+        password: 'password123', 
+
+4. Abrir la carpeta principal con vscode 
+
+5. Abrir una terminal en la carpeta principal y ejecutar el comando: npm install 
+
+6. Esperar a que termine y ejecutar el comando npm run dev en la misma carpeta principal 
+
+7. Abrir en el navegador la direccion http://localhost:4000/ 
+
+8. Crear cuenta y usar crm 

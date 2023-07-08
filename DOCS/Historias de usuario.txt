@@ -1,0 +1,38 @@
+Historia de usuario: Iniciar sesión
+Título: Iniciar sesión en el CRM
+
+Descripción: Como usuario registrado, quiero poder iniciar sesión en el CRM para acceder a las funcionalidades y mis datos personalizados.
+
+Criterios de aceptación:
+
+En la página de inicio de sesión, el usuario debe poder ingresar su dirección de correo electrónico y contraseña.
+El sistema debe verificar que los datos ingresados sean correctos y correspondan a un usuario registrado.
+Si los datos de inicio de sesión son válidos, el usuario debe ser redirigido a la página principal del CRM.
+Si los datos de inicio de sesión no son válidos, se debe mostrar un mensaje de error indicando que las credenciales son incorrectas.
+
+
+
+Historia de usuario: Crear producto
+Título: Crear un nuevo producto
+
+Descripción: Como administrador del CRM, quiero poder crear y agregar nuevos productos al sistema para su posterior gestión.
+
+Criterios de aceptación:
+
+En la sección de administración de productos, el administrador debe poder ingresar la información del nuevo producto, como nombre, descripción, precio, cantidad en almacen, vendidos y margen.
+El sistema debe validar que todos los campos requeridos estén completos antes de permitir la creación del producto.
+Una vez creado el producto, este debe estar disponible para su gestión y visualización en el CRM.
+
+
+
+Historia de usuario: Editar cliente
+Título: Editar información de un cliente
+
+Descripción: Como usuario del CRM, quiero poder editar la información de un cliente existente para mantener sus datos actualizados.
+
+Criterios de aceptación:
+
+En la sección de gestión de clientes, el usuario debe poder seleccionar un cliente específico para editarlo.
+Se deben mostrar los campos de información del cliente, como nombre, dirección, número de teléfono, etc.
+El usuario puede modificar cualquier campo de información del cliente.
+Después de guardar los cambios, el sistema debe actualizar la información del cliente en la base de datos.
